@@ -1,8 +1,8 @@
 class Item {
-  String title = "";
-  bool done = false;
+  String? title;
+  bool? done;
 
-  Item({required this.title, required this.done});
+  Item({this.title, this.done});
 
   Item.fromJson(Map<String, dynamic> json) {
     title = json['title'];
